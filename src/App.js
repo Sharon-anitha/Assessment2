@@ -8,9 +8,9 @@ import Newticket from './components/Newticket';
 const App = () => {
   return (
     <div className="project">
-    <BrowserRouter basename="/Assessment2">
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route exact path="/Assessment2" element={<Login />} />
+        <Route exact path="/" element={<Login />} />
         <Route path="/landing/:name" element={<Landing />} />
         <Route path="/new-ticket" element={<Newticket />} />
        
