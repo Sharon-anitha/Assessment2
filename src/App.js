@@ -7,13 +7,12 @@ import Newticket from './components/Newticket';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/login">
       <Routes>
-        <Route exact path="/" element={<Login />} />
-        <Route path="/login" element={<Login />} />
+        <Route exact path="/login" element={<Login />} />
         <Route path="/landing/:name" element={<Landing />} />
         <Route path="/new-ticket" element={<Newticket />} />
-        
+        <Route  path ="*" component={<NotFound/>} />
       </Routes>
     </Router>
   );
