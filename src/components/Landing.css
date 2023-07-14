@@ -1,0 +1,31 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  nav {
+    margin-top: 50px;
+  }
+  
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  li {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  h1{
+    color:rgb(40, 5, 45);
+    font-family: 'pacifico';
+    text-shadow:0 0 3px  #9867a4;
+  }
+  h2{
+    font-family: 'pacifico';
+    text-shadow:0 0 3px #FF0000;
+  }
+  
+  
